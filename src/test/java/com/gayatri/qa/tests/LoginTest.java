@@ -8,24 +8,27 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import org.testng.annotations.DataProvider;
+import com.gayatri.qa.base.BaseTest;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import java.time.Duration;
 
-public class LoginTest {
+public class LoginTest extends BaseTest {
 
-
-    WebDriver driver;
     LoginPage loginPage;
 
-    @BeforeMethod
-    public void setUp() {
-        driver = new ChromeDriver();
-        driver.manage().window().maximize();
-        driver.get("https://www.saucedemo.com");
+    @BeforeMethod(alwaysRun = true)
+    public void initPages() {
         loginPage = new LoginPage(driver);
     }
 
-    @Test
+    @Test(groups = {"smoke", "regression"})
     public void validLoginTest() {
-        loginPage.login("standard_user", "secret_sauce");
+        loginPage.login("standard_user", "secret_sauc");
+
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        wait.until(ExpectedConditions.urlToBe("https://www.saucedemo.com/inventory.html"));
+
         Assert.assertEquals(driver.getCurrentUrl(), "https://www.saucedemo.com/inventory.html");
     }
 
@@ -50,8 +53,4 @@ public class LoginTest {
         Assert.assertTrue(loginPage.getErrorMessage().contains(expectedError));
     }
 
-    @AfterMethod
-    public void tearDown() {
-        driver.quit();
-    }
 }
