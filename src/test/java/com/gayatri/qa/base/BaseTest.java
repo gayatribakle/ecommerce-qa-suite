@@ -1,9 +1,14 @@
 package com.gayatri.qa.base;
 
+import com.gayatri.qa.utils.ConfigReader;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -13,18 +18,16 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.StandardCopyOption;
-import com.gayatri.qa.utils.ConfigReader;
-import org.openqa.selenium.edge.EdgeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class BaseTest {
 
+    private static final Logger log = LogManager.getLogger(BaseTest.class);
     protected WebDriver driver;
-
 
     @BeforeMethod(alwaysRun = true)
     public void setUp() {
         String browser = ConfigReader.get("browser");
+        log.info("Opening " + browser + " browser");
 
         switch (browser.toLowerCase()) {
             case "firefox":
@@ -44,6 +47,7 @@ public class BaseTest {
     @AfterMethod(alwaysRun = true)
     public void tearDown(ITestResult result) {
         if (result.getStatus() == ITestResult.FAILURE) {
+            log.error("Test FAILED: " + result.getName());
             takeScreenshot(result.getName());
         }
         driver.quit();

@@ -1,0 +1,22 @@
+2026-11-02 02:15:42 [INFO] Utils - [TestNG] Running:
+  C:\Users\HP\AppData\Local\JetBrains\IntelliJIdea2026.2\temp-testng-customsuite.xml
+
+2026-11-02 02:15:42 [INFO] BaseTest - Opening chrome browser
+2026-11-02 02:15:44 [INFO] LoginPage - Logging in as user: standard_user
+2026-11-02 02:15:45 [INFO] BaseTest - Opening chrome browser
+2026-11-02 02:15:47 [INFO] LoginPage - Logging in as user: locked_out_user
+2026-11-02 02:15:48 [INFO] BaseTest - Opening chrome browser
+2026-11-02 02:15:49 [INFO] LoginPage - Logging in as user: 
+2026-11-02 02:15:50 [INFO] BaseTest - Opening chrome browser
+2026-11-02 02:15:52 [INFO] LoginPage - Logging in as user: standard_user
+2026-11-02 02:15:53 [INFO] BaseTest - Opening chrome browser
+2026-11-02 02:15:54 [INFO] LoginPage - Logging in as user: standard_user
+2026-11-02 02:15:55 [INFO] BaseTest - Opening chrome browser
+2026-11-02 02:15:56 [INFO] LoginPage - Logging in as user: standard_user
+2026-11-02 02:16:16 [INFO] Utils - [TestNG] Running:
+  C:\Users\HP\AppData\Local\JetBrains\IntelliJIdea2026.2\temp-testng-customsuite.xml
+
+2026-11-02 02:16:16 [INFO] BaseTest - Opening chrome browser
+2026-11-02 02:16:18 [INFO] LoginPage - Logging in as user: standard_user
+2026-11-02 02:16:19 [INFO] BaseTest - Opening chrome browser
+2026-11-02 02:16:21 [INFO] LoginPage - Logging in as user: standard_user
