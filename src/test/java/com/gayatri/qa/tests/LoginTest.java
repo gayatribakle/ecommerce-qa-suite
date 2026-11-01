@@ -24,7 +24,7 @@ public class LoginTest extends BaseTest {
 
     @Test(groups = {"smoke", "regression"})
     public void validLoginTest() {
-        loginPage.login("standard_user", "secret_sauc");
+        loginPage.login("standard_user", "secret_sauce");
 
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         wait.until(ExpectedConditions.urlToBe("https://www.saucedemo.com/inventory.html"));

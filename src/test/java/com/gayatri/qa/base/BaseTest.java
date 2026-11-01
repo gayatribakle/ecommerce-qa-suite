@@ -13,16 +13,32 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.StandardCopyOption;
+import com.gayatri.qa.utils.ConfigReader;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class BaseTest {
 
     protected WebDriver driver;
 
+
     @BeforeMethod(alwaysRun = true)
     public void setUp() {
-        driver = new ChromeDriver();
+        String browser = ConfigReader.get("browser");
+
+        switch (browser.toLowerCase()) {
+            case "firefox":
+                driver = new FirefoxDriver();
+                break;
+            case "edge":
+                driver = new EdgeDriver();
+                break;
+            default:
+                driver = new ChromeDriver();
+        }
+
         driver.manage().window().maximize();
-        driver.get("https://www.saucedemo.com");
+        driver.get(ConfigReader.get("baseUrl"));
     }
 
     @AfterMethod(alwaysRun = true)
