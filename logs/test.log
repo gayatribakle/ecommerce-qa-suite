@@ -73,3 +73,129 @@
 2026-11-02 18:01:14 [INFO] LoginPage - Logging in as user: standard_user
 2026-11-02 18:01:15 [INFO] BaseTest - Opening chrome browser
 2026-11-02 18:01:16 [INFO] LoginPage - Logging in as user: standard_user
+2026-11-02 18:15:57 [INFO] Utils - [TestNG] Running:
+  C:\Users\HP\AppData\Local\JetBrains\IntelliJIdea2026.2\temp-testng-customsuite.xml
+
+2026-11-02 18:15:57 [INFO] BaseTest - Opening chrome browser
+2026-11-02 18:15:59 [INFO] LoginPage - Logging in as user: standard_user
+2026-11-02 18:16:01 [INFO] BaseTest - Opening chrome browser
+2026-11-02 18:16:02 [INFO] LoginPage - Logging in as user: standard_user
+2026-11-02 18:16:05 [INFO] BaseTest - Opening chrome browser
+2026-11-02 18:16:06 [INFO] LoginPage - Logging in as user: standard_user
+2026-11-02 18:16:07 [ERROR] BaseTest - Test FAILED: completePurchaseTest
+2026-11-02 18:16:08 [INFO] BaseTest - Opening chrome browser
+2026-11-02 18:16:09 [INFO] LoginPage - Logging in as user: standard_user
+2026-11-02 18:17:23 [INFO] Utils - [TestNG] Running:
+  C:\Users\HP\AppData\Local\JetBrains\IntelliJIdea2026.2\temp-testng-customsuite.xml
+
+2026-11-02 18:17:23 [INFO] BaseTest - Opening chrome browser
+2026-11-02 18:17:26 [INFO] LoginPage - Logging in as user: standard_user
+2026-11-02 18:17:27 [INFO] BaseTest - Opening chrome browser
+2026-11-02 18:17:28 [INFO] LoginPage - Logging in as user: standard_user
+2026-11-02 18:17:29 [ERROR] BaseTest - Test FAILED: checkoutWithoutDetailsShowsErrorTest
+2026-11-02 18:17:30 [INFO] BaseTest - Opening chrome browser
+2026-11-02 18:17:31 [INFO] LoginPage - Logging in as user: standard_user
+2026-11-02 18:17:33 [INFO] BaseTest - Opening chrome browser
+2026-11-02 18:17:34 [INFO] LoginPage - Logging in as user: standard_user
+2026-11-02 18:29:04 [INFO] BaseTest - Opening chrome browser
+2026-11-02 18:29:07 [INFO] LoginPage - Logging in as user: standard_user
+2026-11-02 18:29:08 [INFO] BaseTest - Opening chrome browser
+2026-11-02 18:29:09 [INFO] LoginPage - Logging in as user: locked_out_user
+2026-11-02 18:29:11 [INFO] BaseTest - Opening chrome browser
+2026-11-02 18:29:12 [INFO] LoginPage - Logging in as user: 
+2026-11-02 18:29:13 [INFO] BaseTest - Opening chrome browser
+2026-11-02 18:29:14 [INFO] LoginPage - Logging in as user: standard_user
+2026-11-02 18:29:14 [INFO] BaseTest - Opening chrome browser
+2026-11-02 18:29:16 [INFO] LoginPage - Logging in as user: standard_user
+2026-11-02 18:29:16 [INFO] BaseTest - Opening chrome browser
+2026-11-02 18:29:18 [INFO] LoginPage - Logging in as user: standard_user
+2026-11-02 18:29:19 [INFO] BaseTest - Opening chrome browser
+2026-11-02 18:29:21 [INFO] LoginPage - Logging in as user: standard_user
+2026-11-02 18:29:22 [INFO] BaseTest - Opening chrome browser
+2026-11-02 18:29:24 [INFO] LoginPage - Logging in as user: standard_user
+2026-11-02 18:29:26 [INFO] BaseTest - Opening chrome browser
+2026-11-02 18:29:27 [INFO] LoginPage - Logging in as user: standard_user
+2026-11-02 18:29:28 [INFO] BaseTest - Opening chrome browser
+2026-11-02 18:29:29 [INFO] LoginPage - Logging in as user: standard_user
+2026-11-02 18:29:30 [INFO] BaseTest - Opening chrome browser
+2026-11-02 18:29:31 [INFO] LoginPage - Logging in as user: standard_user
+2026-11-02 18:29:43 [ERROR] BaseTest - Test FAILED: completePurchaseTest
+2026-11-02 18:29:43 [INFO] BaseTest - Opening chrome browser
+2026-11-02 18:29:45 [INFO] LoginPage - Logging in as user: standard_user
+2026-11-02 18:29:45 [ERROR] BaseTest - Test FAILED: removeItemFromCartTest
+2026-11-02 18:35:08 [INFO] BaseTest - Opening chrome browser
+2026-11-02 18:35:10 [INFO] LoginPage - Logging in as user: standard_user
+2026-11-02 18:35:11 [INFO] BaseTest - Opening chrome browser
+2026-11-02 18:35:13 [INFO] LoginPage - Logging in as user: locked_out_user
+2026-11-02 18:35:14 [INFO] BaseTest - Opening chrome browser
+2026-11-02 18:35:15 [INFO] LoginPage - Logging in as user: 
+2026-11-02 18:35:17 [INFO] BaseTest - Opening chrome browser
+2026-11-02 18:35:19 [INFO] LoginPage - Logging in as user: standard_user
+2026-11-02 18:35:19 [INFO] BaseTest - Opening chrome browser
+2026-11-02 18:35:20 [INFO] LoginPage - Logging in as user: standard_user
+2026-11-02 18:35:21 [INFO] BaseTest - Opening chrome browser
+2026-11-02 18:35:23 [INFO] LoginPage - Logging in as user: standard_user
+2026-11-02 18:35:24 [INFO] BaseTest - Opening chrome browser
+2026-11-02 18:35:26 [INFO] LoginPage - Logging in as user: standard_user
+2026-11-02 18:35:27 [INFO] BaseTest - Opening chrome browser
+2026-11-02 18:35:28 [INFO] LoginPage - Logging in as user: standard_user
+2026-11-02 18:35:28 [INFO] BaseTest - Opening chrome browser
+2026-11-02 18:35:30 [INFO] LoginPage - Logging in as user: standard_user
+2026-11-02 18:35:32 [INFO] BaseTest - Opening chrome browser
+2026-11-02 18:35:33 [INFO] LoginPage - Logging in as user: standard_user
+2026-11-02 18:35:34 [ERROR] BaseTest - Test FAILED: checkoutWithoutDetailsShowsErrorTest
+2026-11-02 18:35:34 [INFO] BaseTest - Opening chrome browser
+2026-11-02 18:35:36 [INFO] LoginPage - Logging in as user: standard_user
+2026-11-02 18:35:47 [ERROR] BaseTest - Test FAILED: completePurchaseTest
+2026-11-02 18:35:48 [INFO] BaseTest - Opening chrome browser
+2026-11-02 18:35:49 [INFO] LoginPage - Logging in as user: standard_user
+2026-11-02 18:37:01 [INFO] BaseTest - Opening chrome browser
+2026-11-02 18:37:03 [INFO] LoginPage - Logging in as user: standard_user
+2026-11-02 18:37:05 [INFO] BaseTest - Opening chrome browser
+2026-11-02 18:37:06 [INFO] LoginPage - Logging in as user: locked_out_user
+2026-11-02 18:37:07 [INFO] BaseTest - Opening chrome browser
+2026-11-02 18:37:08 [INFO] LoginPage - Logging in as user: 
+2026-11-02 18:37:09 [INFO] BaseTest - Opening chrome browser
+2026-11-02 18:37:10 [INFO] LoginPage - Logging in as user: standard_user
+2026-11-02 18:37:11 [INFO] BaseTest - Opening chrome browser
+2026-11-02 18:37:12 [INFO] LoginPage - Logging in as user: standard_user
+2026-11-02 18:37:13 [INFO] BaseTest - Opening chrome browser
+2026-11-02 18:37:14 [INFO] LoginPage - Logging in as user: standard_user
+2026-11-02 18:37:15 [INFO] BaseTest - Opening chrome browser
+2026-11-02 18:37:16 [INFO] LoginPage - Logging in as user: standard_user
+2026-11-02 18:37:18 [INFO] BaseTest - Opening chrome browser
+2026-11-02 18:37:19 [INFO] LoginPage - Logging in as user: standard_user
+2026-11-02 18:37:20 [INFO] BaseTest - Opening chrome browser
+2026-11-02 18:37:22 [INFO] LoginPage - Logging in as user: standard_user
+2026-11-02 18:37:24 [INFO] BaseTest - Opening chrome browser
+2026-11-02 18:37:25 [INFO] LoginPage - Logging in as user: standard_user
+2026-11-02 18:37:26 [ERROR] BaseTest - Test FAILED: checkoutWithoutDetailsShowsErrorTest
+2026-11-02 18:37:26 [INFO] BaseTest - Opening chrome browser
+2026-11-02 18:37:28 [INFO] LoginPage - Logging in as user: standard_user
+2026-11-02 18:37:28 [ERROR] BaseTest - Test FAILED: completePurchaseTest
+2026-11-02 18:37:29 [INFO] BaseTest - Opening chrome browser
+2026-11-02 18:37:31 [INFO] LoginPage - Logging in as user: standard_user
+2026-11-02 18:39:25 [INFO] BaseTest - Opening chrome browser
+2026-11-02 18:39:27 [INFO] LoginPage - Logging in as user: standard_user
+2026-11-02 18:39:28 [INFO] BaseTest - Opening chrome browser
+2026-11-02 18:39:30 [INFO] LoginPage - Logging in as user: locked_out_user
+2026-11-02 18:39:30 [INFO] BaseTest - Opening chrome browser
+2026-11-02 18:39:32 [INFO] LoginPage - Logging in as user: 
+2026-11-02 18:39:32 [INFO] BaseTest - Opening chrome browser
+2026-11-02 18:39:35 [INFO] LoginPage - Logging in as user: standard_user
+2026-11-02 18:39:35 [INFO] BaseTest - Opening chrome browser
+2026-11-02 18:39:38 [INFO] LoginPage - Logging in as user: standard_user
+2026-11-02 18:39:38 [INFO] BaseTest - Opening chrome browser
+2026-11-02 18:39:40 [INFO] LoginPage - Logging in as user: standard_user
+2026-11-02 18:39:41 [INFO] BaseTest - Opening chrome browser
+2026-11-02 18:39:43 [INFO] LoginPage - Logging in as user: standard_user
+2026-11-02 18:39:43 [INFO] BaseTest - Opening chrome browser
+2026-11-02 18:39:45 [INFO] LoginPage - Logging in as user: standard_user
+2026-11-02 18:39:46 [INFO] BaseTest - Opening chrome browser
+2026-11-02 18:39:48 [INFO] LoginPage - Logging in as user: standard_user
+2026-11-02 18:39:50 [INFO] BaseTest - Opening chrome browser
+2026-11-02 18:39:52 [INFO] LoginPage - Logging in as user: standard_user
+2026-11-02 18:39:53 [INFO] BaseTest - Opening chrome browser
+2026-11-02 18:39:54 [INFO] LoginPage - Logging in as user: standard_user
+2026-11-02 18:40:06 [INFO] BaseTest - Opening chrome browser
+2026-11-02 18:40:07 [INFO] LoginPage - Logging in as user: standard_user

@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-EcommerceSuite" class="navigator-link">
+              <span class="suite-name border-passed">EcommerceSuite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-EcommerceSuite" class="navigator-link ">
+                    <span>C:\Users\HP\IdeaProjects\ecommerce-qa-suite\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-EcommerceSuite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-EcommerceSuite" class="navigator-link ">
+                    <span>2 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-EcommerceSuite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-EcommerceSuite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-EcommerceSuite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-EcommerceSuite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">12 methods,   12 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-EcommerceSuite" class="hide-methods passed suite-EcommerceSuite"> (hide)</a> <!-- hide-methods passed suite-EcommerceSuite -->
+                      <a href="#" panel-name="suite-EcommerceSuite" class="show-methods passed suite-EcommerceSuite"> (show)</a> <!-- show-methods passed suite-EcommerceSuite -->
+                    </span>
+                    <div class="method-list-content passed suite-EcommerceSuite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-EcommerceSuite" title="com.gayatri.qa.tests.InventoryTest" class="method navigator-link" hash-for-method="addToCartTest">addToCartTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-EcommerceSuite" title="com.gayatri.qa.tests.CheckoutTest" class="method navigator-link" hash-for-method="cartShowsAddedItemTest">cartShowsAddedItemTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-EcommerceSuite" title="com.gayatri.qa.tests.CheckoutTest" class="method navigator-link" hash-for-method="checkoutWithoutDetailsShowsErrorTest">checkoutWithoutDetailsShowsErrorTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-EcommerceSuite" title="com.gayatri.qa.tests.CheckoutTest" class="method navigator-link" hash-for-method="completePurchaseTest">completePurchaseTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-EcommerceSuite" title="com.gayatri.qa.tests.LoginTest" class="method navigator-link" hash-for-method="invalidLoginDataTest(standard_user, , Password is required)">invalidLoginDataTest(standard_user, , Password is required)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-EcommerceSuite" title="com.gayatri.qa.tests.LoginTest" class="method navigator-link" hash-for-method="invalidLoginDataTest(standard_user, wrong_password, Username and password do not match)">invalidLoginDataTest(standard_user, wrong_password, Username and password do not match)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-EcommerceSuite" title="com.gayatri.qa.tests.LoginTest" class="method navigator-link" hash-for-method="invalidLoginDataTest(, secret_sauce, Username is required)">invalidLoginDataTest(, secret_sauce, Username is required)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-EcommerceSuite" title="com.gayatri.qa.tests.LoginTest" class="method navigator-link" hash-for-method="invalidLoginDataTest(locked_out_user, secret_sauce, locked out)">invalidLoginDataTest(locked_out_user, secret_sauce, locked out)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-EcommerceSuite" title="com.gayatri.qa.tests.LoginTest" class="method navigator-link" hash-for-method="invalidLoginTest">invalidLoginTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-EcommerceSuite" title="com.gayatri.qa.tests.InventoryTest" class="method navigator-link" hash-for-method="pageTitleTest">pageTitleTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-EcommerceSuite" title="com.gayatri.qa.tests.CheckoutTest" class="method navigator-link" hash-for-method="removeItemFromCartTest">removeItemFromCartTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-EcommerceSuite" title="com.gayatri.qa.tests.LoginTest" class="method navigator-link" hash-for-method="validLoginTest">validLoginTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-EcommerceSuite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-EcommerceSuite" class="panel EcommerceSuite">
+          <div class="suite-EcommerceSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.gayatri.qa.tests.InventoryTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addToCartTest">
+                  </a> <!-- addToCartTest -->
+                  <span class="method-name">addToCartTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="pageTitleTest">
+                  </a> <!-- pageTitleTest -->
+                  <span class="method-name">pageTitleTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-EcommerceSuite-class-passed -->
+          <div class="suite-EcommerceSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.gayatri.qa.tests.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="invalidLoginDataTest(standard_user, , Password is required)">
+                  </a> <!-- invalidLoginDataTest(standard_user, , Password is required) -->
+                  <span class="method-name">invalidLoginDataTest</span>
+                  <span class="parameters">(standard_user,,Password is required)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="invalidLoginDataTest(standard_user, wrong_password, Username and password do not match)">
+                  </a> <!-- invalidLoginDataTest(standard_user, wrong_password, Username and password do not match) -->
+                  <span class="method-name">invalidLoginDataTest</span>
+                  <span class="parameters">(standard_user,wrong_password,Username and password do not match)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="invalidLoginDataTest(, secret_sauce, Username is required)">
+                  </a> <!-- invalidLoginDataTest(, secret_sauce, Username is required) -->
+                  <span class="method-name">invalidLoginDataTest</span>
+                  <span class="parameters">(,secret_sauce,Username is required)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="invalidLoginDataTest(locked_out_user, secret_sauce, locked out)">
+                  </a> <!-- invalidLoginDataTest(locked_out_user, secret_sauce, locked out) -->
+                  <span class="method-name">invalidLoginDataTest</span>
+                  <span class="parameters">(locked_out_user,secret_sauce,locked out)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="invalidLoginTest">
+                  </a> <!-- invalidLoginTest -->
+                  <span class="method-name">invalidLoginTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validLoginTest">
+                  </a> <!-- validLoginTest -->
+                  <span class="method-name">validLoginTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-EcommerceSuite-class-passed -->
+          <div class="suite-EcommerceSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.gayatri.qa.tests.CheckoutTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="cartShowsAddedItemTest">
+                  </a> <!-- cartShowsAddedItemTest -->
+                  <span class="method-name">cartShowsAddedItemTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkoutWithoutDetailsShowsErrorTest">
+                  </a> <!-- checkoutWithoutDetailsShowsErrorTest -->
+                  <span class="method-name">checkoutWithoutDetailsShowsErrorTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="completePurchaseTest">
+                  </a> <!-- completePurchaseTest -->
+                  <span class="method-name">completePurchaseTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="removeItemFromCartTest">
+                  </a> <!-- removeItemFromCartTest -->
+                  <span class="method-name">removeItemFromCartTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-EcommerceSuite-class-passed -->
+        </div> <!-- panel EcommerceSuite -->
+        <div panel-name="test-xml-EcommerceSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\HP\IdeaProjects\ecommerce-qa-suite\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;EcommerceSuite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;AllTests&quot; verbose=&quot;0&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.gayatri.qa.tests.LoginTest&quot;/&gt;
+      &lt;class name=&quot;com.gayatri.qa.tests.InventoryTest&quot;/&gt;
+      &lt;class name=&quot;com.gayatri.qa.tests.CheckoutTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- AllTests --&gt;
+&lt;/suite&gt; &lt;!-- EcommerceSuite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-EcommerceSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for EcommerceSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">AllTests (3 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-EcommerceSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for EcommerceSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">regression</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">addToCartTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">cartShowsAddedItemTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">checkoutWithoutDetailsShowsErrorTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">completePurchaseTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">invalidLoginDataTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">invalidLoginTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">pageTitleTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">removeItemFromCartTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">validLoginTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">smoke</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">completePurchaseTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">pageTitleTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">validLoginTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-EcommerceSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for EcommerceSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_EcommerceSuite');
+function tableData_EcommerceSuite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(12);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'completePurchaseTest')
+data.setCell(0, 2, 'com.gayatri.qa.tests.CheckoutTest')
+data.setCell(0, 3, 10461);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'invalidLoginDataTest')
+data.setCell(1, 2, 'com.gayatri.qa.tests.LoginTest')
+data.setCell(1, 3, 417);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'invalidLoginTest')
+data.setCell(2, 2, 'com.gayatri.qa.tests.LoginTest')
+data.setCell(2, 3, 371);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'validLoginTest')
+data.setCell(3, 2, 'com.gayatri.qa.tests.LoginTest')
+data.setCell(3, 3, 359);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'invalidLoginDataTest')
+data.setCell(4, 2, 'com.gayatri.qa.tests.LoginTest')
+data.setCell(4, 3, 303);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'invalidLoginDataTest')
+data.setCell(5, 2, 'com.gayatri.qa.tests.LoginTest')
+data.setCell(5, 3, 269);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'invalidLoginDataTest')
+data.setCell(6, 2, 'com.gayatri.qa.tests.LoginTest')
+data.setCell(6, 3, 264);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'checkoutWithoutDetailsShowsErrorTest')
+data.setCell(7, 2, 'com.gayatri.qa.tests.CheckoutTest')
+data.setCell(7, 3, 254);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'addToCartTest')
+data.setCell(8, 2, 'com.gayatri.qa.tests.InventoryTest')
+data.setCell(8, 3, 153);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'removeItemFromCartTest')
+data.setCell(9, 2, 'com.gayatri.qa.tests.CheckoutTest')
+data.setCell(9, 3, 140);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'cartShowsAddedItemTest')
+data.setCell(10, 2, 'com.gayatri.qa.tests.CheckoutTest')
+data.setCell(10, 3, 100);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'pageTitleTest')
+data.setCell(11, 2, 'com.gayatri.qa.tests.InventoryTest')
+data.setCell(11, 3, 65);
+window.suiteTableData['EcommerceSuite']= { tableData: data, tableDiv: 'times-div-EcommerceSuite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 13 seconds</span>
+              <div id="times-div-EcommerceSuite">
+              </div> <!-- times-div-EcommerceSuite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-EcommerceSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for EcommerceSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-EcommerceSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-EcommerceSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.gayatri.qa.tests.LoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp()</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">initPages</span>
+                <span class="method-start">1811 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">invalidLoginDataTest(standard_user, wrong_password, Username and password do not match)</span>
+                <span class="method-start">1817 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=invalidLoginDataTest status=SUCCESS method=LoginTest.invalidLoginDataTest(java.lang...)</span>
+                <span class="method-start">2249 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp()</span>
+                <span class="method-start">2810 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">initPages</span>
+                <span class="method-start">4473 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">invalidLoginDataTest(locked_out_user, secret_sauce, locked out)</span>
+                <span class="method-start">4474 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=invalidLoginDataTest status=SUCCESS method=LoginTest.invalidLoginDataTest(java.lang...)</span>
+                <span class="method-start">4777 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp()</span>
+                <span class="method-start">5260 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">initPages</span>
+                <span class="method-start">6690 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">invalidLoginDataTest(, secret_sauce, Username is required)</span>
+                <span class="method-start">6691 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=invalidLoginDataTest status=SUCCESS method=LoginTest.invalidLoginDataTest(java.lang...)</span>
+                <span class="method-start">6959 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp()</span>
+                <span class="method-start">7158 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">initPages</span>
+                <span class="method-start">9470 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">invalidLoginDataTest(standard_user, , Password is required)</span>
+                <span class="method-start">9472 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=invalidLoginDataTest status=SUCCESS method=LoginTest.invalidLoginDataTest(java.lang...)</span>
+                <span class="method-start">9743 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp()</span>
+                <span class="method-start">10239 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">initPages</span>
+                <span class="method-start">12421 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">invalidLoginTest</span>
+                <span class="method-start">12424 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=invalidLoginTest status=SUCCESS method=LoginTest.invalidLoginTest()[pri:0, instance...)</span>
+                <span class="method-start">12798 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp()</span>
+                <span class="method-start">13259 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">initPages</span>
+                <span class="method-start">15321 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validLoginTest</span>
+                <span class="method-start">15322 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=validLoginTest status=SUCCESS method=LoginTest.validLoginTest()[pri:0, instance:com...)</span>
+                <span class="method-start">15681 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.gayatri.qa.tests.InventoryTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp()</span>
+                <span class="method-start">16058 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">loginFirst</span>
+                <span class="method-start">17649 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">addToCartTest</span>
+                <span class="method-start">17885 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=addToCartTest status=SUCCESS method=InventoryTest.addToCartTest()[pri:0, instance:c...)</span>
+                <span class="method-start">18041 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp()</span>
+                <span class="method-start">18181 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">loginFirst</span>
+                <span class="method-start">20071 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">pageTitleTest</span>
+                <span class="method-start">20296 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=pageTitleTest status=SUCCESS method=InventoryTest.pageTitleTest()[pri:0, instance:c...)</span>
+                <span class="method-start">20361 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.gayatri.qa.tests.CheckoutTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp()</span>
+                <span class="method-start">20787 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">loginAndAddItem</span>
+                <span class="method-start">22671 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">cartShowsAddedItemTest</span>
+                <span class="method-start">23104 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=cartShowsAddedItemTest status=SUCCESS method=CheckoutTest.cartShowsAddedItemTest()[...)</span>
+                <span class="method-start">23215 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp()</span>
+                <span class="method-start">24370 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">loginAndAddItem</span>
+                <span class="method-start">26352 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">checkoutWithoutDetailsShowsErrorTest</span>
+                <span class="method-start">26847 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=checkoutWithoutDetailsShowsErrorTest status=SUCCESS method=CheckoutTest.checkoutWit...)</span>
+                <span class="method-start">27111 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp()</span>
+                <span class="method-start">27645 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">loginAndAddItem</span>
+                <span class="method-start">29200 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">completePurchaseTest</span>
+                <span class="method-start">29714 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=completePurchaseTest status=SUCCESS method=CheckoutTest.completePurchaseTest()[pri:...)</span>
+                <span class="method-start">40175 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp()</span>
+                <span class="method-start">40367 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">loginAndAddItem</span>
+                <span class="method-start">42153 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">removeItemFromCartTest</span>
+                <span class="method-start">42610 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=removeItemFromCartTest status=SUCCESS method=CheckoutTest.removeItemFromCartTest()[...)</span>
+                <span class="method-start">42750 ms</span>
+              </div> <!-- configuration-method after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

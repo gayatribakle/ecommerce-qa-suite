@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="EcommerceSuite">
+    <test name="AllTests">
+        <classes>
+            <class name="com.gayatri.qa.tests.LoginTest"/>
+            <class name="com.gayatri.qa.tests.InventoryTest"/>
+            <class name="com.gayatri.qa.tests.CheckoutTest"/>
+        </classes>
+    </test>
+</suite>

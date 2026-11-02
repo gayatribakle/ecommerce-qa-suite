@@ -2,8 +2,10 @@ package com.gayatri.qa.pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
-import java.util.List;
+import java.time.Duration;
 
 public class CartPage {
 
@@ -18,20 +20,25 @@ public class CartPage {
         this.driver = driver;
     }
 
+    private WebDriverWait waiter() {
+        return new WebDriverWait(driver, Duration.ofSeconds(10));
+    }
+
     public int getItemCount() {
-        List<?> items = driver.findElements(cartItems);
-        return items.size();
+        return driver.findElements(cartItems).size();
     }
 
     public String getFirstItemName() {
-        return driver.findElement(itemNames).getText();
+        return waiter().until(ExpectedConditions.visibilityOfElementLocated(itemNames)).getText();
     }
 
     public void removeBackpack() {
-        driver.findElement(removeBackpack).click();
+        waiter().until(ExpectedConditions.elementToBeClickable(removeBackpack)).click();
+        waiter().until(ExpectedConditions.invisibilityOfElementLocated(cartItems));
     }
 
     public void clickCheckout() {
-        driver.findElement(checkoutButton).click();
+        waiter().until(ExpectedConditions.elementToBeClickable(checkoutButton)).click();
+        waiter().until(ExpectedConditions.urlContains("checkout-step-one"));
     }
 }
