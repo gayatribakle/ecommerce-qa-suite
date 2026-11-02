@@ -18,12 +18,16 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.StandardCopyOption;
-
+import com.gayatri.qa.listeners.TestListener;
+import org.testng.annotations.Listeners;
+@Listeners(TestListener.class)
 public class BaseTest {
 
     private static final Logger log = LogManager.getLogger(BaseTest.class);
     protected WebDriver driver;
-
+    public WebDriver getDriver() {
+        return driver;
+    }
     @BeforeMethod(alwaysRun = true)
     public void setUp() {
         String browser = ConfigReader.get("browser");

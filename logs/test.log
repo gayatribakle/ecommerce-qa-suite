@@ -20,3 +20,18 @@
 2026-11-02 02:16:18 [INFO] LoginPage - Logging in as user: standard_user
 2026-11-02 02:16:19 [INFO] BaseTest - Opening chrome browser
 2026-11-02 02:16:21 [INFO] LoginPage - Logging in as user: standard_user
+2026-11-02 17:50:39 [INFO] Utils - [TestNG] Running:
+  C:\Users\HP\AppData\Local\JetBrains\IntelliJIdea2026.2\temp-testng-customsuite.xml
+
+2026-11-02 17:50:39 [INFO] BaseTest - Opening chrome browser
+2026-11-02 17:50:45 [INFO] LoginPage - Logging in as user: standard_user
+2026-11-02 17:50:46 [INFO] BaseTest - Opening chrome browser
+2026-11-02 17:50:48 [INFO] LoginPage - Logging in as user: locked_out_user
+2026-11-02 17:50:50 [INFO] BaseTest - Opening chrome browser
+2026-11-02 17:50:52 [INFO] LoginPage - Logging in as user: 
+2026-11-02 17:50:54 [INFO] BaseTest - Opening chrome browser
+2026-11-02 17:50:55 [INFO] LoginPage - Logging in as user: standard_user
+2026-11-02 17:50:57 [INFO] BaseTest - Opening chrome browser
+2026-11-02 17:50:58 [INFO] LoginPage - Logging in as user: standard_user
+2026-11-02 17:51:00 [INFO] BaseTest - Opening chrome browser
+2026-11-02 17:51:03 [INFO] LoginPage - Logging in as user: standard_user
