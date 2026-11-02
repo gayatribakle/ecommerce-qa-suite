@@ -1,5 +1,6 @@
 package com.gayatri.qa.base;
 
+import com.gayatri.qa.listeners.TestListener;
 import com.gayatri.qa.utils.ConfigReader;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -12,25 +13,30 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Listeners;
+import org.testng.annotations.Optional;
+import org.testng.annotations.Parameters;
 
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.StandardCopyOption;
-import com.gayatri.qa.listeners.TestListener;
-import org.testng.annotations.Listeners;
+
 @Listeners(TestListener.class)
 public class BaseTest {
 
     private static final Logger log = LogManager.getLogger(BaseTest.class);
     protected WebDriver driver;
+
     public WebDriver getDriver() {
         return driver;
     }
+
     @BeforeMethod(alwaysRun = true)
-    public void setUp() {
-        String browser = ConfigReader.get("browser");
+    @Parameters("browser")
+    public void setUp(@Optional("") String browserParam) {
+        String browser = browserParam.isEmpty() ? ConfigReader.get("browser") : browserParam;
         log.info("Opening " + browser + " browser");
 
         switch (browser.toLowerCase()) {
