@@ -10,6 +10,7 @@ public class InventoryPage {
     private By pageTitle = By.cssSelector(".title");
     private By addBackpackButton = By.id("add-to-cart-sauce-labs-backpack");
     private By cartBadge = By.cssSelector(".shopping_cart_badge");
+    private By cartLink = By.cssSelector(".shopping_cart_link");
 
     public InventoryPage(WebDriver driver) {
         this.driver = driver;
@@ -26,4 +27,8 @@ public class InventoryPage {
     public String getCartCount() {
         return driver.findElement(cartBadge).getText();
     }
+    public void openCart() {
+        driver.findElement(cartLink).click();
+    }
+
 }
