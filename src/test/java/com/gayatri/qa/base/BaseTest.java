@@ -22,6 +22,11 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.StandardCopyOption;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.edge.EdgeOptions;
+import org.openqa.selenium.firefox.FirefoxOptions;
+import java.util.HashMap;
+import java.util.Map;
 
 @Listeners(TestListener.class)
 public class BaseTest {
@@ -39,15 +44,28 @@ public class BaseTest {
         String browser = browserParam.isEmpty() ? ConfigReader.get("browser") : browserParam;
         log.info("Opening " + browser + " browser");
 
+        boolean headless = Boolean.parseBoolean(System.getProperty("headless", "false"));
+
         switch (browser.toLowerCase()) {
             case "firefox":
-                driver = new FirefoxDriver();
+                FirefoxOptions ff = new FirefoxOptions();
+                if (headless) ff.addArguments("-headless");
+                driver = new FirefoxDriver(ff);
                 break;
             case "edge":
-                driver = new EdgeDriver();
+                EdgeOptions edge = new EdgeOptions();
+                if (headless) edge.addArguments("--headless=new", "--window-size=1920,1080");
+                driver = new EdgeDriver(edge);
                 break;
             default:
-                driver = new ChromeDriver();
+                ChromeOptions chrome = new ChromeOptions();
+                Map<String, Object> prefs = new HashMap<>();
+                prefs.put("credentials_enable_service", false);
+                prefs.put("profile.password_manager_enabled", false);
+                prefs.put("profile.password_manager_leak_detection", false);
+                chrome.setExperimentalOption("prefs", prefs);
+                if (headless) chrome.addArguments("--headless=new", "--window-size=1920,1080");
+                driver = new ChromeDriver(chrome);
         }
 
         driver.manage().window().maximize();

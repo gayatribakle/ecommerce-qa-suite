@@ -12,6 +12,7 @@ import java.time.Duration;
 public class LoginPage {
 
     private static final Logger log = LogManager.getLogger(LoginPage.class);
+
     private WebDriver driver;
 
     private By usernameField = By.id("user-name");
@@ -23,15 +24,19 @@ public class LoginPage {
         this.driver = driver;
     }
 
+    private WebDriverWait waiter() {
+        return new WebDriverWait(driver, Duration.ofSeconds(15));
+    }
+
     public void login(String username, String password) {
         log.info("Logging in as user: " + username);
+        waiter().until(ExpectedConditions.visibilityOfElementLocated(usernameField));
         driver.findElement(usernameField).sendKeys(username);
         driver.findElement(passwordField).sendKeys(password);
         driver.findElement(loginButton).click();
     }
 
     public String getErrorMessage() {
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-        return wait.until(ExpectedConditions.visibilityOfElementLocated(errorMessage)).getText();
+        return waiter().until(ExpectedConditions.visibilityOfElementLocated(errorMessage)).getText();
     }
 }
